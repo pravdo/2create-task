@@ -1,0 +1,291 @@
+*{
+    margin-left: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* -------- FIRST HEADER --------- */
+.header1{
+    height: 50px;
+    background-color: rgb(251, 251, 251);
+    display: flex;
+}
+
+/* ------ MAIN HEADER ----- */
+.headerP, .design-logo{
+    margin-left: 18%;
+}
+
+.design-logo{
+    height: 44px;
+    width: 100px;
+    background-image: url('images/charity.png');
+    font-size: cover;
+    float: left;
+    margin-top: 20px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu{
+    list-style: none;
+    color: rgb(89, 89, 89);
+    padding-left: 37%;
+}
+
+.nav-menu li{
+    display: inline-block;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color: rgb(89, 89, 89);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover{
+    color: rgb(240, 77, 72);
+    border: 1px solid rgb(240, 77, 72);
+    padding: 8px;
+}
+
+/* ----------------- SEND AFRICAN CHILDREN ------------------- */
+
+.img-size1{
+    width: 25px;
+    margin-right: 3px;
+}
+
+.img-size3{
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+.img-size2{
+    width: 25px;
+    margin-left: 3px;
+}
+
+.studentA{
+    height: 700px;
+    background: url(images/student.jpg);
+    margin-top: 55px;
+    position: relative;
+}
+
+.send{
+    color: white;
+    background-color: rgb(250, 111, 28);
+    height: 200px;
+    padding-top: 20px;
+    margin-top: 470px;
+    position: absolute;
+    width: 100%;
+}
+
+.african{
+    border: 1px solid white;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 10px 40px;
+    transition: all 0.3s ease-in-out;
+    width: 200px;
+    background-color: rgb(250, 111, 28);
+    margin-left: 45%;
+}
+
+.african:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    padding: 10px 25px;
+}
+
+h2, .african, .lorem1, .line, .lorem2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------- FEATURED CAUSES ---------------- */
+
+.content{
+    margin-top: 60px;
+    margin-left: 5%;
+}
+
+.content li{
+    float: left;
+    width: 25%;
+    padding: 0 3% 0 3%;
+    text-align: center;
+    list-style-type: none;
+    line-height: 1.6em;
+    
+}
+
+.content::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+/* -------- TWO UP ----------- */
+
+.twoUp{
+    display: flex;
+}
+
+.bigImage{
+    background: url(images/bigChild.jpg);
+    height: 500px;
+    width: 50%;
+}
+
+.twoContent{
+    color: white;
+    background-color: black;
+    height: 500px;
+    width: 50%;
+    padding: 80px 15% 80px 50px;
+}
+
+.learn{
+    border: 1px solid white;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    transition: all 0.3 ease-in-out;
+    width: 200px;
+    background-color: black;
+}
+
+.learn:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    border: 1px solid black;
+    padding: 10px 25px;
+}
+
+/* ---------------- FRUITS AND GUITAR --------------- */
+
+.threecontent{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* positioning on the top of one another */
+#main-inner{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+}
+
+#main-inner div{
+    background-color: white;
+    padding: 3px;
+}
+
+.posted{
+    color: gray;
+}
+
+.apple{
+    float: left;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.guitar{
+    height: 150px;
+    float: top;
+}
+/* 
+.upcoming-event{
+     float: right; 
+} */
+
+/* positioning next to each other */
+#wrapper{
+    width: 80%;
+    margin: 20px;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+
+#first{
+    width: 550px;
+    float: left;
+}
+
+#second{
+    overflow: hidden; /* if you don't want #second to wrap beloq #first */
+    
+}
+
+/* --------- FOOTER --------- */
+
+footer{
+    background: rgb(39, 38, 44);
+    padding: 50px 10% 60px 10%;
+    border-top: 2px solid;
+}
+
+footer h4{
+    margin: 0;
+    color: white;
+    font-size: 18px;
+}
+
+footer ul{
+    float: left;
+    width: 20%;
+    list-style-type: none;
+    margin-left: 5%;
+}
+
+footer::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+footer li{
+    color: gray;
+    width: 80%;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.6rem;
+}
+
+.last-footer{
+    clear: both;
+    float: left;
+    background-color: rgb(34, 33, 38);
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+}
+
+.theme{
+    color: white;
+}
+
